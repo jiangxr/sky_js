@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      div#outer {width: 500px;}
+      div#inner {text-indent: 10%;}
+      p {width: 200px;}
+      p.spread {word-spacing: 30px;}
+      p.tight {word-spacing: -0.5em;}
+      h1 {letter-spacing: -0.5em}
+      h4 {letter-spacing: 20px}
+      a {
+        text-decoration:blink;
+      }
+      p#white {
+        white-space: normal;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="outer">
+    <div id="inner">some text. some text. some text.
+    <p>this is a paragragh.</p>
+    </div>
+    </div>
+    <p class="spread">
+    This is a paragraph. The spaces between words will be increased.
+    </p>
+
+    <p class="tight">
+    This is a paragraph. The spaces between words will be decreased.
+    </p>
+    <h1>This is header 1</h1>
+    <h4>This is header 4</h4>
+    <a href="#">测试链接</a>
+    <p id='white'>This     paragraph has    many
+    spaces           in it.</p>
+  </body>
+</html>
