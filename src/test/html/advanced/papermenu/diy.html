@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <style media="screen">
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    a {
+      text-decoration: none;
+      color: white;
+      background-color: green;
+      width: 100%;
+      display: inline-block;
+      text-align: center;
+    }
+
+    a:hover {
+      background-color: red;
+    }
+
+    a:after {
+      content: "》";
+      position: absolute;
+      left: 160px;
+    }
+
+    ul#main>li {
+      width: 200px;
+    }
+
+    ul.item-content {
+      opacity: 0;
+      height: 0;
+      overflow: hidden;
+      transition: all 1s ease;
+    }
+
+    a:hover+ul {
+      opacity: 1;
+      height: auto;
+    }
+
+    a:hover:after {
+      transform: rotate(90deg);
+      -webkit-transform: rotate(90deg);
+      -moz-transform: rotate(90deg);
+    }
+  </style>
+</head>
+
+<body>
+  <ul id="main">
+    <li><a href="#">订单修改</a>
+      <ul class="item-content">
+        <li>CartXml修改</li>
+        <li>OrderXml修改</li>
+      </ul>
+    </li>
+    <li><a href="#">数据监控</a>
+      <ul class="item-content">
+        <li>秒级监控</li>
+        <li>risk监控</li>
+      </ul>
+    </li>
+  </ul>
+</body>
+
+</html>
