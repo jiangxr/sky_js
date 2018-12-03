@@ -5,23 +5,50 @@
   <meta charset="utf-8">
   <title>W3Cschool教程(w3cschool.cn)</title>
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
     body {
+      margin-left: 1px;
+    }
+
+    body,
+    html {
       direction: ttb;
+      height: 100%;
     }
 
     .flex-container {
       display: -webkit-flex;
       display: flex;
-      width: 400px;
-      height: 250px;
+      width: 100%;
+      height: 100%;
       background-color: lightgrey;
+      flex-direction: row;
+      justify-content: space-between;
+      -webkit-align-items: flex-start;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      align-content: flex-start;
     }
 
     .flex-item {
       background-color: cornflowerblue;
+    }
+
+    .flex-item:first-child {
+      height: 10%;
+      width: 100%;
+      border-bottom: 1px solid #FFFFFF;
+      /* margin: 10px; */
+    }
+
+    .flex-item:nth-child(n+2) {
+      height: 90%;
       width: 100px;
-      height: 100px;
-      margin: 10px;
     }
   </style>
 </head>
